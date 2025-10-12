@@ -1,43 +1,72 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
 }
 
-html, body {
-  height: 100%;
-  width: 100%;
+html,
+body {
+    height: 100%;
+    width: 100%;
 }
 
-main {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  gap: 1rem;
+#main {
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    background-color: rgb(3, 42, 55);
+
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
 }
-main section {
-  background-size: cover;
-  background-position: center;
-  flex: 1;
-  height: 100%;
-  background-color: rgb(148, 17, 17);
-  transition: all 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+.card {
+    height: 300px;
+    width: 330px;
+    background-color: white;
+    position: relative;
+    border-radius: 20px;
+
+    overflow: hidden;
 }
-main section:hover {
-  flex: 4;
+
+.card img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
-main section:nth-child(1) {
-  background-image: url(chopar.jpg);
+
+.bottom {
+    height: 40%;
+    width: 100%;
+    position: absolute;
+    bottom: -40%;
+
+    transition: all ease 0.4s;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background: linear-gradient(transparent, black);
+
 }
-main section:nth-child(2) {
-  background-image: url(shangi.jpg);
+
+.bottom h4 {
+    color: white;
+    font-size: 30px;
+    font-weight: 400;
 }
-main section:nth-child(3) {
-  background-image: url(luffy.jpg);
+
+.bottom h3 {
+    background-color: white;
+    padding: 5px 7px;
+    border-radius: 50%;
 }
-main section:nth-child(4) {
-  background-image: url(zoro.jpg);
+
+
+.card:hover .bottom {
+    bottom: 0;
 }
-main section:nth-child(5) {
-  background-image: url(nami.jpg);
-}/*# sourceMappingURL=style.css.map */
