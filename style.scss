@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+
+    section{
+        background-size: cover;
+        background-position: center;
+        flex: 1;
+        height: 100%;
+        background-color: rgb(148, 17, 17);
+                transition: all 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+    section:hover{
+        flex: 4;
+    }
+    section:nth-child(1){
+        background-image: url(chopar.jpg);
+    }
+    section:nth-child(2){
+        background-image: url(shangi.jpg);
+    }
+    section:nth-child(3){
+        background-image: url(luffy.jpg);
+    }
+    section:nth-child(4){
+        background-image: url(zoro.jpg);
+    }
+    section:nth-child(5){
+        background-image: url(nami.jpg);
+    }
+}
